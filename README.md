@@ -18,5 +18,5 @@ Data provided by INE
 
   [ ] Implement idea with react.js
 
-### [text](https://lfergon.github.io/populationspainmigration/) ###
+### [Link to web page](https://lfergon.github.io/populationspainmigration/) ###
 
