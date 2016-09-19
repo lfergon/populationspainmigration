@@ -1,6 +1,8 @@
 svg {
-  font: 13px sans-serif;
+  font: 14px sans-serif;
   font-weight: bold;
+  background: lightgrey;
+  box-shadow: 3px 3px 6px -3px black;
 }
 
 #circle circle {
@@ -9,7 +11,7 @@ svg {
 }
 
 .group path {
-  fill-opacity: .7;
+  fill-opacity: 0.8;
 }
 
 path.chord {
@@ -19,4 +21,16 @@ path.chord {
 
 #circle:hover path.fade {
   display: none;
+}
+
+.to-library {
+  background: linear-gradient(gray, gray) no-repeat;
+  background-size: 100% 1px;
+  background-position: 0 1.15em;
+  text-shadow: .05em 0 white, -0.5em 0 white;
+}
+
+.project-name {
+  color: white !important;
+  text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
 }
