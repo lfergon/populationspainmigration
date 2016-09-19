@@ -1,5 +1,5 @@
 svg {
-  font: 12px sans-serif;
+  font: 13px sans-serif;
   font-weight: bold;
 }
 
@@ -9,7 +9,7 @@ svg {
 }
 
 .group path {
-  fill-opacity: .5;
+  fill-opacity: .7;
 }
 
 path.chord {

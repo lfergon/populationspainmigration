@@ -8,7 +8,7 @@ var arc = d3.svg.arc()
   .outerRadius(outerRadius);
 
 var layout = d3.layout.chord()
-  .padding(.04)
+  .padding(.004)
   .sortSubgroups(d3.descending)
   .sortChords(d3.ascending);
 
@@ -31,7 +31,7 @@ d3.csv("regions.csv", function(regions) {
     // Compute the chord layout.
     layout.matrix(matrix);
     
-    // Add a group per neighborhood.
+    // Add a group per region.
     var group = svg.selectAll(".group")
       .data(layout.groups)
       .enter().append("g")
