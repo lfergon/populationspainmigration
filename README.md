@@ -10,13 +10,15 @@ Data provided by INE
 
 ### To improve ###
 
+  [ ] Webpack implementation
+
+  [ ] Implement idea with react.js
+
   [ ] Dropdown to pick the year
 
   [ ] Styling
 
   [ ] Color schema
-
-  [ ] Implement idea with react.js
 
 ### [Link to web page](https://lfergon.github.io/populationspainmigration/) ###
 
