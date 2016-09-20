@@ -5,6 +5,22 @@ svg {
   box-shadow: 3px 3px 6px -3px black;
 }
 
+.chord-diagram {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.chord-diagram-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
 #circle circle {
   fill: none;
   pointer-events: all;

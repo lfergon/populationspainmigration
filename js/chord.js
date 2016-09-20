@@ -15,12 +15,16 @@ var layout = d3.layout.chord()
 var path = d3.svg.chord()
   .radius(innerRadius);
 
-var svg = d3.select("#chord-diagram").append("svg")
-  .attr("width", width)
-  .attr("height", height)
+var svg = d3.select("#chord-diagram")
+  .append("div")
+  .classed("chord-diagram", true)
+  .append("svg")
+  .attr("preserveAspectRatio", "xMinYMin meet")
+  .attr("viewBox", "0 0 720 720")
   .append("g")
   .attr("id", "circle")
-  .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+  .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+  .classed("svg-content-responsive", true);
 
 svg.append("circle")
   .attr("r", outerRadius);
