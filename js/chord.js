@@ -43,8 +43,8 @@ d3.csv("regions_spain.csv", function(regions) {
       .on("mouseover", mouseover);
 
     // Add a mouseover title.
-    group.append("title").text(function(d, i) {
-      return regions[i].name + ": " + d.value + " of origins";
+    group.append("title").html(function(d, i) {
+      return "<strong>" + regions[i].name + ": " + (d.value).toFixed(0) + " of origins </strong>";
     });
     
     // Add the group arc.
@@ -87,7 +87,7 @@ d3.csv("regions_spain.csv", function(regions) {
       .attr("d", path);
     
       // Add an elaborate mouseover title for each chord.
-    chord.append("title").text(function(d) {
+    chord.append("title").html(function(d) {
       return regions[d.source.index].name
         + " → " + regions[d.target.index].name
         + ": " + d.source.value
