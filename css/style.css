@@ -6,19 +6,19 @@ svg {
 }
 
 .chord-diagram {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%; /* aspect ratio */
-    vertical-align: top;
-    overflow: hidden;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* aspect ratio */
+  vertical-align: top;
+  overflow: hidden;
 }
 
 .chord-diagram-responsive {
-    display: inline-block;
-    position: absolute;
-    top: 10px;
-    left: 0;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
 }
 
 #circle circle {

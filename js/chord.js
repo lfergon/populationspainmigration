@@ -29,8 +29,8 @@ var svg = d3.select("#chord-diagram")
 svg.append("circle")
   .attr("r", outerRadius);
 
-d3.csv("regions.csv", function(regions) {
-  d3.json("matrix.json", function(matrix) {
+d3.csv("regions_spain.csv", function(regions) {
+  d3.json("matrix_spain_2014_data.json", function(matrix) {
 
     // Compute the chord layout.
     layout.matrix(matrix);
